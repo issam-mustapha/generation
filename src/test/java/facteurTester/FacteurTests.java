@@ -44,4 +44,11 @@ public class FacteurTests {
         actual_veleur=FacteurPremier.generate(3);
         assertThat(actual_veleur).isEqualTo(expected);
     }
+    @Test
+    public void test_4_devrait_retourne_2_2(){
+        expected.add(2);
+        expected.add(2);
+        actual_veleur=FacteurPremier.generate(4);
+        assertThat(actual_veleur).isEqualTo(expected);
+    }
 }
