@@ -7,10 +7,13 @@ public class FacteurPremier {
 
 public static List<Integer> generate(int nbre){
     List<Integer> obj=new ArrayList<Integer>();
-    if(nbre%2==0){
-        obj.add(2);
-        nbre=nbre/2;
-
+ int i=2 ;
+    while(nbre>1){
+        while(nbre%i==0){
+            obj.add(i);
+            nbre=nbre/i;
+        }
+        i++;
     }
     if(nbre>1){
         obj.add(nbre);

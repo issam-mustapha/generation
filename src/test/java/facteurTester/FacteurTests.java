@@ -51,4 +51,29 @@ public class FacteurTests {
         actual_veleur=FacteurPremier.generate(4);
         assertThat(actual_veleur).isEqualTo(expected);
     }
+    @Test
+    public void test_6_devrait_retourne_2_3(){
+        expected.add(2);
+        expected.add(3);
+        actual_veleur=FacteurPremier.generate(6);
+        assertThat(actual_veleur).isEqualTo(expected);
+    }
+    @Test
+    public void test_8_devrait_retourne_2_2_2(){
+        expected.add(2);
+        expected.add(2);
+        expected.add(2);
+
+        actual_veleur=FacteurPremier.generate(8);
+        assertThat(actual_veleur).isEqualTo(expected);
+    }
+    @Test
+    public void test_9_devrait_retourne_3_3(){
+        expected.add(3);
+        expected.add(3);
+
+
+        actual_veleur=FacteurPremier.generate(9);
+        assertThat(actual_veleur).isEqualTo(expected);
+    }
 }
