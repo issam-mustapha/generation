@@ -6,6 +6,13 @@ import java.util.List;
 public class FacteurPremier {
 
 public static List<Integer> generate(int nbre){
-    return new ArrayList<Integer>();
+    List<Integer> obj=new ArrayList<Integer>();
+    if(nbre>1){
+        obj.add(nbre);
+        return obj;
+    }else{
+        return  obj;
+    }
+
 }
 }
